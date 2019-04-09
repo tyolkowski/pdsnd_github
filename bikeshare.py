@@ -18,9 +18,9 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    
+
     while True:
-        city = input("What city would you like to filter by? Chicago, New York City, or Washington? :").lower()  
+        city = input("What city would you like to filter by? Chicago, New York City, or Washington? :").lower()
         if city not in ('chicago', 'new york city', 'washington'):
             print('Invalid city')
             continue
@@ -29,7 +29,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
-        month = input("What month would you like to filter for? (all, january, february, ... , june) :").lower()  
+        month = input("What month would you like to filter for? (all, january, february, ... , june) :").lower()
         if month not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
             print('invalid month')
             continue
@@ -38,7 +38,7 @@ def get_filters():
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input("What day of the week would you like to filter for? (all, sunday, monday, ... , saturday)  :").lower()  
+        day = input("What day of the week would you like to filter for? (all, sunday, monday, ... , saturday)  :").lower()
         if day not in ('all', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'):
             print('invalid day of the week')
             continue
@@ -68,7 +68,7 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
         df = df[df['month'] == month]
-        
+
     if day != 'all':
         df = df[df['day_of_week'] == day.title()]
     print(df)
@@ -95,7 +95,7 @@ def time_stats(df):
     df['hour'] = df['Start Time'].dt.hour
     popular_hour = df['hour'].mode()[0]
     print("The most popular Start hour is: ", popular_hour)
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -222,3 +222,6 @@ def main():
 
 if __name__ == "__main__":
 	main()
+"""Adding some extra text down here. Would I break the
+merging of branches if I change a
+random line in the main body?"""
