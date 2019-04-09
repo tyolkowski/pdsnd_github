@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+4/9/19
 
 ### Project Title
-Replace the Project Title
+Version Control Udacity Project
 
 ### Description
-Describe what your project is about and what it does
+A basic study on version control.
 
 ### Files used
-Include the files used
+pyton.py
+.gitignore
+chicago.csv
+new_york_city.csv
+washington.csv
+readme.md
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+notepad as text editor after atom and notepad++ wouldn't work with git bash
