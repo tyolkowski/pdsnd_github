@@ -17,3 +17,5 @@ readme.md
 
 ### Credits
 notepad as text editor after atom and notepad++ wouldn't work with git bash
+https://help.github.com/en/articles/associating-text-editors-with-git
+^ attempts at atom and notepad++
