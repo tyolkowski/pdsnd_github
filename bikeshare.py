@@ -173,6 +173,7 @@ def user_stats(df):
         print("Calculating Gender Stats...")
         print()
         print("No gender data available for this query")
+        print()
 
 
     # TO DO: Display earliest, most recent, and most common year of birth
